@@ -5,10 +5,10 @@
 
 try{
     if(isset($_SESSION['id_user'])){
-        $acc_mail=$_SESSION['email'];
-        $name_customer=$_SESSION['name'];
-        $title="Thông báo của MũNónChất";
         if(isset($_POST['name'])&&isset($_POST['phone'])&&isset($_POST['address'])&&isset($_POST['email'])&&isset($_POST['payment'])){
+            $acc_mail=$_POST['email'];
+            $name_customer=$_POST['name'];
+            $title="Thông báo của MũNónChất";
             $name=$_POST['name'];
             $phone_number=$_POST['phone'];
             $address=$_POST['address'];

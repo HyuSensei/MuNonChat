@@ -176,8 +176,8 @@ $get_data = new admin();
                                     <td><?php echo $value['khuyen_mai'] ?> đ</td>
                                     <td><?php echo $value['danh_muc'] ?></td>
                                     <td>
-                                        <a class="edit" title="Edit" name="edit" href="edit_product.php?id=<?php echo $value['id']  ?>"><i class="material-icons">&#xE254;</i></a>
-                                        <a class="delete" title="Delete" href="delete_product.php?id=<?php echo $value['id']  ?>"><i class="material-icons">&#xE872;</i></a>
+                                        <a class="edit" title="Edit" name="edit" href="update_product.php?id=<?php echo $value['id']  ?>"><i class="material-icons">&#xE254;</i></a>
+                                        <a class="delete" title="Delete" href="process_deleteproduct.php?id=<?php echo $value['id']  ?>"><i class="material-icons">&#xE872;</i></a>
                                     </td>
                                 </tr>
                             <?php } ?>
